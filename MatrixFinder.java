@@ -181,7 +181,130 @@ public class MatrixFinder {
 	double time54 = System.currentTimeMillis();
 	double timeWorst5 = time54 - time53;
 	System.out.println("5000x5000: \nBest: " + timeBest5 +"\nWorst: "+ timeWorst5);
+
+	System.out.println("=====================================");
 	
+	counter = 0;
+	int[][] arr6 = new int[6000][6000];
+	populate(arr6);
+	int find6 = topRight(arr6);
+	int best6 = find6;
+	int worst6 = find6 - 1;
+	double time61 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr6,best6);
+	    counter++;
+	}
+	double time62 = System.currentTimeMillis();
+	double timeBest6 = time62 - time61;
+	counter = 0;
+	double time63 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr6,worst6);
+	    counter++;
+	}
+	double time64 = System.currentTimeMillis();
+	double timeWorst6 = time64 - time63;
+	System.out.println("6000x6000: \nBest: " + timeBest6 +"\nWorst: "+ timeWorst6);
+
+	System.out.println("=====================================");
+
+	counter = 0;
+	int[][] arr7 = new int[7000][7000];
+	populate(arr7);
+	int find7 = topRight(arr7);
+	int best7 = find7;
+	int worst7 = find7 - 1;
+	double time71 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr7,best7);
+	    counter++;
+	}
+	double time72 = System.currentTimeMillis();
+	double timeBest7 = time72 - time71;
+	counter = 0;
+	double time73 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr7,worst7);
+	    counter++;
+	}
+	double time74 = System.currentTimeMillis();
+	double timeWorst7 = time74 - time73;
+	System.out.println("7000x7000: \nBest: " + timeBest7 +"\nWorst: "+ timeWorst7);
+
+	System.out.println("=====================================");
+
+	counter = 0;
+	int[][] arr8 = new int[8000][8000];
+	populate(arr8);
+	int find8 = topRight(arr8);
+	int best8 = find8;
+	int worst8 = find8 - 1;
+	double time81 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr8,best8);
+	    counter++;
+	}
+	double time82 = System.currentTimeMillis();
+	double timeBest8 = time82 - time81;
+	counter = 0;
+	double time83 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr8,worst8);
+	    counter++;
+	}
+	double time84 = System.currentTimeMillis();
+	double timeWorst8 = time84 - time83;
+	System.out.println("8000x8000: \nBest: " + timeBest8 +"\nWorst: "+ timeWorst8);
+
+	System.out.println("=====================================");
+
+	counter = 0;
+	int[][] arr9 = new int[9000][9000];
+	populate(arr9);
+	int find9 = topRight(arr9);
+	int best9 = find9;
+	int worst9 = find9 - 1;
+	double time91 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr9,best9);
+	    counter++;
+	}
+	double time92 = System.currentTimeMillis();
+	double timeBest9 = time92 - time91;
+	counter = 0;
+	double time93 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr9,worst9);
+	    counter++;
+	}
+	double time94 = System.currentTimeMillis();
+	double timeWorst9 = time94 - time93;
+	System.out.println("9000x9000: \nBest: " + timeBest9 +"\nWorst: "+ timeWorst9);
+
+	System.out.println("=====================================");
+	counter = 0;
+	int[][] arr10 = new int[10000][10000];
+	populate(arr10);
+	int find10 = topRight(arr10);
+	int best10 = find10;
+	int worst10 = find10 - 1;
+	double time101 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr10,best10);
+	    counter++;
+	}
+	double time102 = System.currentTimeMillis();
+	double timeBest10 = time102 - time101;
+	counter = 0;
+	double time103 = System.currentTimeMillis();
+	while (counter < 100000) {
+	    search(arr10,worst10);
+	    counter++;
+	}
+	double time104 = System.currentTimeMillis();
+	double timeWorst10 = time104 - time103;
+	System.out.println("10000x10000: \nBest: " + timeBest10 +"\nWorst: "+ timeWorst10);
     } 
 }
 				
