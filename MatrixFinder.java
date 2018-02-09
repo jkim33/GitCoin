@@ -1,7 +1,7 @@
 //Team GitCoin - Jason Kim, Mohtasim Howlader, Ying Xin Jiang
 //APCS2 pd8
-//HW#03 -- I Am Still Searching
-//2018-02-02 F
+//Lab#00 -- But What Does the Data Say?
+//2018-02-09 F
 
 /* We begin with the integer at the top right position of the matrix, (0, n-1). We also establish integer varibles called row and column, to represent the current position we are in the matrix. We then start our while loop that has the condition, if the target number and the integer at the current position are NOT equal, run the body. In the body, we check if the target is greater than the current position, (row,col). If yes, we move down a row. If not, we move to the left a column. We then check if we are out of bounds. If yes, we return (-1,-1). Once we get out of the loop, we return (row, col) */
 
@@ -56,8 +56,10 @@ public class MatrixFinder {
 	return arr[0][arr.length-1];
     }
     
-    public static void main(String[] args) {
+    public static void experiment() {
 	int counter;
+
+	System.out.println("NEW TRIAL============================");
 	
 	counter = 0;
 	int[][] arr1 = new int[1000][1000];
