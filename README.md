@@ -4,7 +4,7 @@
 For an n by n matrix, the worst case execution time for our serach method is O(n) because the worst case is if the number we are searching for is not in the array and the worst route it can take it a diagonal path, which is O(2n-1). 
 
 ### Background: 
-The problem asks us to search for an integer in an n by n matrix in that is ascending left to right and top to bottom. Our goal is to write an algorithm that can do this with O(n) complexity. 
+The problem asks us to locate the coordinates of an integer in a given n by n matrix in that is ascending left to right and top to bottom. Our goal is to write an algorithm that can do this with O(n) complexity. In order to verfiy that our algorithm is indeed O(n) we will have to record the real time that it takes for our code to locate an integer in both best case and worst case scenarios in various different matrix sizes. We will then have to produce graphs of these times in order to determine whether or not there is a clear linear pattern.
 
 ### Our Algorithm: 
 We start in the top right corner of the matrix. We first check if our current position is the target number. We move to the left if the number we are looking for is greater than the position we are currently on. If not, we move down. Once we go out of range, we stop and return (-1,-1) as the target is not in the matrix.
