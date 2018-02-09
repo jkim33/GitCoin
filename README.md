@@ -9,4 +9,6 @@ Experiment Methodology:
 
 
 Results:
+![](Pictures/graph1.PNG)
+![](Pictures/graph2.PNG)
 
